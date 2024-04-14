@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Gruop-4-fClass</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+       <nav>
+        <img src="logo5.png" alt="" class="logo">
+        <ul id="menu-links">
+            <li><a href="#"><b>Home</b></a></li>
+            <li><a href="Services/index.html"><b>Services</b></a></li>
+            <li><a href="Projects/index.html"><b>Projects</b></a></li>
+            <li><a href="About Us/index.html"><b>About Us</b></a></li>
+            <li><a href="contact/index.html"><b>Contact Us</b></a></li>
+
+            
+           
+        </ul>
+        <button class="nav-btn">Get Started <img src="arrow_white.png" alt="" class="start"></button>
+       
+         <img src="menu.png" alt="" class="menu-icon" onclick="toogleMenu()">
+
+       </nav> 
+       <div class="header">
+      
+        <h1><span>FREE</span><br><span>LANCER</span></h1>
+        <div class="btn-container">
+            <button class="btn-dark">Request call back <img src="phone.png" alt=""></button>
+            <button class="btn-light">Know more</button>
+        </div>
+        <p>Passionate UI/UX designers with 10+ years of experience.</p>
+        <img src="user10.webp" alt="" class="user-img">
+       </div>
+
+       
+       <section class="wrapper-main">
+       <table>
+        <tr>
+            <th><b>Number</b></th>
+            <th><b>Name</b></th>
+            <th><b>Index Number</b></th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Paul Mensah</td>
+            <td>5211040537</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Evans Owusu</td>
+            <td>5211040533</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Blessing Nsor</td>
+            <td>5211040534</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Kennedy B. Osei</td>
+            <td>5211040540</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>Saeed Mohammed</td>
+            <td>5211040535</td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td>Richard Mensah</td>
+            <td>5211040538</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>Arif M. Tahiru</td>
+            <td>5211040536</td>
+        </tr>
+      
+        </tr>
+       </table>
+    </section>
+
+       <script>
+
+        let navbar = document.querySelector('nav');
+        let menuLinks = document.getElementById("menu-links")
+
+         function toogleMenu(){
+             menuLinks.classList.toogle('show-menu');
+         }
+
+        window.onscroll = function(){
+           if(window.scrollY > 0){
+            navbar.style.background = '#eefff9';
+           }else{
+            navbar.style.background = 'transparent';
+           }
+        }
+
+       </script>
+
+       
+
+    </body>
+</html>
